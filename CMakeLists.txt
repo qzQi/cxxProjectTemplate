@@ -29,13 +29,5 @@ add_subdirectory(common)
 # 包含业务代码
 add_subdirectory(src)
 
-# 如果存在测试目录且启用了测试则添加
-if(EXISTS ${PROJECT_SOURCE_DIR}/test/CMakeLists.txt AND BUILD_TESTING)
-    enable_testing()
-    add_subdirectory(test)
-endif()
-
-# 默认启用测试，除非明确禁用
-if(NOT DEFINED BUILD_TESTING)
-    set(BUILD_TESTING ON)
-endif()
+# 测试代码
+add_subdirectory(test)
