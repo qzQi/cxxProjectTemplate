@@ -13,7 +13,6 @@ link_directories(${COMMON_LIBRARY_OUTPUT_DIR})
 # 添加各个组件子目录
 add_subdirectory(src/redis)
 add_subdirectory(src/mongo)
-add_subdirectory(src/time_scheduler)
 add_subdirectory(src/yamlParser)
 add_subdirectory(src/threadPool)
 add_subdirectory(src/logger)
@@ -39,7 +38,6 @@ target_include_directories(common
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/redis
         ${CMAKE_CURRENT_SOURCE_DIR}/src/mongo
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/time_scheduler
         ${CMAKE_CURRENT_SOURCE_DIR}/src/yamlParser
         ${CMAKE_CURRENT_SOURCE_DIR}/src/threadPool
         ${CMAKE_CURRENT_SOURCE_DIR}/src/logger

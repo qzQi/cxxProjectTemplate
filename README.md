@@ -77,6 +77,12 @@ docker run -it cxx-framework
 - CMake 3.10+
 - GCC/G++ (支持C++17)
 
+## 版本信息
+- gRPC: 1.30.2
+- Protobuf: 3.12.4
+- protoc: 3.12.4
+- gtest: 1.17.0
+
 
 ## 许可证
 
