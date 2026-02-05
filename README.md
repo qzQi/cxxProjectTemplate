@@ -1,13 +1,14 @@
 # C++ Development Framework
 
-这是一个现代化的C++开发脚手架，旨在为后续的网络库和RPC框架开发提供坚实的基础。
+这是一个现代化的C++开发脚手架，把日常C++开发过程中常用的工具编译到本地，提供对应的头文件与库文件；  
+最终通过Docker打包，构建一个可以开箱即用的C++开发环境；
 
 ## 特性
 
 - **模块化设计**: 清晰的目录结构，便于扩展和维护
 - **构建系统**: CMake + Shell脚本的自动化构建
 - **依赖管理**: 依赖库集中管理
-- **容器化**: Docker支持，便于部署和分发
+- **容器化**: Docker支持，开箱即用；
 
 ## 目录结构
 
@@ -24,6 +25,7 @@ cxxProjextTemp/
 │   │   ├── exception/     # 异常处理
 │   │   └── memory_pool/   # 内存池管理(tcmalloc)
 │   ├── pkg/               # 第三方依赖库
+│   ├── tools/             # comom/pkg中必须的工具，比如protoc、grpc_cpp_plugin
 │   └── CMakeLists.txt     # common库构建配置
 ├── pkg/                   # 编译后的可执行文件输出目录
 ├── src/                   # 业务代码目录
@@ -36,6 +38,7 @@ cxxProjextTemp/
 ```
 
 ## 快速开始
+TODO:
 
 ### 构建项目
 
@@ -58,6 +61,7 @@ cxxProjextTemp/
 ```
 
 ### Docker部署
+TODO
 
 ```bash
 # 构建Docker镜像

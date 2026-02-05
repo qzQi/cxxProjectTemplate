@@ -1,0 +1,9 @@
+// 文件：proto/test_message.proto
+syntax = "proto3";
+
+package tutorial;
+
+message TestMessage {
+  string text = 1;
+  int32  number = 2;
+}
