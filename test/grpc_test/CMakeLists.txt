@@ -12,11 +12,11 @@ add_executable(grpc_client
 
 # 包含头文件
 target_include_directories(grpc_server PRIVATE
-    ${CMAKE_SOURCE_DIR}/common/src/google
+    ${CMAKE_SOURCE_DIR}/common/src/
     ${CMAKE_SOURCE_DIR}/test/grpc_test/proto
 )
 target_include_directories(grpc_client PRIVATE
-    ${CMAKE_SOURCE_DIR}/common/src/google
+    ${CMAKE_SOURCE_DIR}/common/src/
     ${CMAKE_SOURCE_DIR}/test/grpc_test/proto
 )
 
