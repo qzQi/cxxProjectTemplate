@@ -24,14 +24,16 @@ target_include_directories(grpc_client PRIVATE
 target_link_libraries(grpc_server PRIVATE
     ${CMAKE_SOURCE_DIR}/common/pkg/libgrpc++.so
     ${CMAKE_SOURCE_DIR}/common/pkg/libgrpc.so
-    # ${CMAKE_SOURCE_DIR}/common/pkg/libgpr.so
+    ${CMAKE_SOURCE_DIR}/common/pkg/libgpr.so.10
+    ${CMAKE_SOURCE_DIR}/common/pkg/libcares.so.2
     ${CMAKE_SOURCE_DIR}/common/pkg/libprotobuf.so
     pthread
 )
 target_link_libraries(grpc_client PRIVATE
     ${CMAKE_SOURCE_DIR}/common/pkg/libgrpc++.so
     ${CMAKE_SOURCE_DIR}/common/pkg/libgrpc.so
-    # ${CMAKE_SOURCE_DIR}/common/pkg/libgpr.so
+    ${CMAKE_SOURCE_DIR}/common/pkg/libgpr.so.10
+    ${CMAKE_SOURCE_DIR}/common/pkg/libcares.so.2
     ${CMAKE_SOURCE_DIR}/common/pkg/libprotobuf.so
     pthread
 )
