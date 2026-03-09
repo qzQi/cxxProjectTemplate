@@ -57,6 +57,7 @@ TODO:
 
 ```bash
 # 运行生成的可执行文件
+export LD_LIBRARY_PATH=/root/cxxProjectTemplate/common/pkg:$LD_LIBRARY_PATH
 ./pkg/main_app
 ```
 
